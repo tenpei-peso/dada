@@ -140,17 +140,17 @@ export default function Home() {
         {
             description: 'Node Express React MongoDBを使って作ったアプリです、基本的なCRUD操作ができます。', 
             image: mern.src,
-            link: '/'
+            link: '/Mern'
         },
         {
             description: 'FireBaseとReactとReduxで作った古着アプリです。管理者画面では在庫管理や売り上げ管理ができ、 ユーザー画面では付近の古着 屋を探せるようになっています。', 
             image: rfr.src,
-            link: '/rfr'
+            link: '/Rfr'
         },
         {
             description: 'Ruby on Railsで作ったお店の在庫売り上げ管理アプリです。',
             image: rails.src,
-            link: '/rails'
+            link: '/Rails'
         }
     ]
 
@@ -191,7 +191,7 @@ export default function Home() {
                     >
                         {CardItemsArray.map((item, index)=> (
                             <motion.div variants={itemsVariants}  whileHover="hover" key={index}>
-                                <CardItems key={index} description={item.description} image={item.image} link={item.link}/>
+                                <CardItems description={item.description} image={item.image} link={item.link}/>
                             </motion.div  >
                         ))}
                     </motion.div>
