@@ -5,13 +5,13 @@ import { motion } from 'framer-motion'
 import { Grid, makeStyles } from '@material-ui/core'
 import Header from '../components/Header'
 import CardItems from '../components/CardItems'
-import backImage from '../public/img/home/stars.jpg'
-import mern from '../public/img/home/mern.png'
-import rfr from '../public/img/home/RFR.png'
-import rails from '../public/img/home/rails.png'
-import rocket from '../public/img/home/rocket.png'
-import UFO from '../public/img/home/UFO.png'
-import moon from '../public/img/home/moon.png'
+import backImage from '../public/stars.jpg'
+import mern from '../public/mern.png'
+import rfr from '../public/RFR.png'
+import rails from '../public/rails.png'
+import rocket from '../public/rocket.png'
+import UFO from '../public/UFO.png'
+import moon from '../public/moon.png'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -156,7 +156,7 @@ export default function Home() {
 
   return (
     <>
-    
+
       <motion.div style={{ backgroundImage: `url(${backImage.src})`, backgroundSize:'cover'}}
             variants={containerVariants}
             initial="hidden"
